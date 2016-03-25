@@ -108,7 +108,9 @@ $(document).ready(function(){
     var score = checkOne.score + checkTwo.score + checkThree.score + checkFour.score + checkFive.score + checkSix.score;
     alert(score);
     switch(score){
-      case 6: alert("winner 6");
+      case 6:
+      alert("winner 6");
+      $(document).
       break;
       case 7: alert("winner 7");
       break;
