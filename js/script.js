@@ -61,9 +61,9 @@ var checkFour = function(inputNumber){
 //////////////////////////////////////////////////////////////////////////////
 
 var checkFive = function(inputNumber){
-  if( inputNumber.toUpperCase() === "HOT"){
+  if( inputNumber.toUpperCase() === "SHORTS"){
     checkFive.score = 2;
-  }else if(inputNumber.toUpperCase() === "COLD"){
+  }else if(inputNumber.toUpperCase() === "PANTS"){
     checkFive.score = 1;
   }else{
     alert("Whoops, it looks like we are missing something! Check question 5");
