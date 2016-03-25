@@ -111,30 +111,37 @@ $(document).ready(function(){
       case 6:
         alert("winner 6");
       $("#button").hide();
+      $("#newyorkButton").show();
       break;
       case 7:
         alert("winner 7");
         $("#button").hide();
+        $("#newyorkButton").show();
       break;
       case 8:
         alert("winner8");
         $("#button").hide();
+        $("#montanaButton").show();
       break;
       case 9:
         alert("winner 9");
         $("#button").hide();
+        $("#switzerlandButton").show();
       break;
       case 10:
         alert("winner10");
         $("#button").hide();
+        $("#switzerlandButton").show();
       break;
       case 11:
         alert("winner 11");
         $("#button").hide();
+        $("#hawaiiButton").show();
       break;
       case 12:
         alert("winner 12");
         $("#button").hide();
+        $("#hawaiiButton").show();
       break;
     }
 
