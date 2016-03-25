@@ -4,6 +4,18 @@ body{
   font-family: 'Vibur', cursive;
   text-align: center;
 }
+#montanaButton{
+display: none;
+}
+#switzerlandButton{
+display: none;
+}
+#newyorkButton{
+display:none;
+}
+#hawaiiButton{
+display:none;
+}
 .click-me{
   padding-left:275px;
   color:white;

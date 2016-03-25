@@ -109,20 +109,32 @@ $(document).ready(function(){
     alert(score);
     switch(score){
       case 6:
-      alert("winner 6");
-      $(document).
+        alert("winner 6");
+      $("#button").hide();
       break;
-      case 7: alert("winner 7");
+      case 7:
+        alert("winner 7");
+        $("#button").hide();
       break;
-      case 8: alert("winner8");
+      case 8:
+        alert("winner8");
+        $("#button").hide();
       break;
-      case 9: alert("winner 9");
+      case 9:
+        alert("winner 9");
+        $("#button").hide();
       break;
-      case 10: alert("winner10");
+      case 10:
+        alert("winner10");
+        $("#button").hide();
       break;
-      case 11: alert("winner 11");
+      case 11:
+        alert("winner 11");
+        $("#button").hide();
       break;
-      case 12: alert("winner 12");
+      case 12:
+        alert("winner 12");
+        $("#button").hide();
       break;
     }
 
