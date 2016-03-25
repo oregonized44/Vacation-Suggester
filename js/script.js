@@ -1,16 +1,18 @@
+var score = 0;
+var checkInputs = function(inputNumber){
+  if( inputNumber.toUpperCase() === "HOT"){
+    alert("hot");
+  }else if(inputNumber.toUpperCase() === "Cold"){
+    alert("cold")
+  }else{
+    alert("please fill in all missing");
+  }
 
+
+
+}
 
 $(document).ready(function(){
-
-
-
-
-
-
-
-
-var inputSix = $("input:radio[name=coding]:checked").val();
-
   $("#button").click(function(){
     alert("button clicked");
     var inputOne = $("#questionOne").val();
@@ -25,6 +27,9 @@ var inputSix = $("input:radio[name=coding]:checked").val();
     alert(inputFive)
     var inputSix = $("#questionSix").val();
     alert(inputSix);
+    checkInputs(inputOne);
+
+
 
   });
 
