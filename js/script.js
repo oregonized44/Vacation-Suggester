@@ -69,14 +69,12 @@ var checkFive = function(inputNumber){
     alert("Whoops, it looks like we are missing something! Check question 5");
   }
 }
-
 //////////////////////////////////////////////////////////////////////////////
 //CHECK SIX////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 
 var checkSix = function(inputNumber){
   if( inputNumber.toUpperCase() === "SUMMER" || inputNumber.toUpperCase() === "SPRING"){
-    alert("hot");
     checkSix.score = 2;
   }else if(inputNumber.toUpperCase() === "FALL" || inputNumber.toUpperCase() === "WINTER"){
     checkSix.score = 1;
@@ -90,7 +88,7 @@ var checkSix = function(inputNumber){
 //////////////////////////////////////////////////////////////////////////////
 
 $(document).ready(function(){
-  $("#button").click(function(event){
+  $("#button").click(function(event){    //mainclicker
 
     event.defaultPrevent;
     var inputOne = $("#questionOne").val();
@@ -99,6 +97,7 @@ $(document).ready(function(){
     var inputFour = $("#questionFour").val();
     var inputFive = $("#questionFive").val();
     var inputSix = $("#questionSix").val();
+
     checkOne(inputOne);
     checkTwo(inputTwo);
     checkThree(inputThree);
@@ -106,63 +105,38 @@ $(document).ready(function(){
     checkFive(inputFive);
     checkSix(inputSix);
     var score = checkOne.score + checkTwo.score + checkThree.score + checkFour.score + checkFive.score + checkSix.score;
-    alert(score);
     switch(score){
       case 6:
-        alert("winner 6");
       $("#button").hide();
       $("#newyorkButton").show();
       break;
       case 7:
-        alert("winner 7");
         $("#button").hide();
         $("#newyorkButton").show();
       break;
       case 8:
-        alert("winner8");
         $("#button").hide();
         $("#montanaButton").show();
       break;
       case 9:
-        alert("winner 9");
         $("#button").hide();
         $("#switzerlandButton").show();
       break;
       case 10:
-        alert("winner10");
         $("#button").hide();
         $("#switzerlandButton").show();
       break;
       case 11:
-        alert("winner 11");
         $("#button").hide();
         $("#hawaiiButton").show();
       break;
       case 12:
-        alert("winner 12");
         $("#button").hide();
         $("#hawaiiButton").show();
       break;
     }
-
-
-
-  });
-
-  $(".letsTravel").click(function(){
-
-
-  });
-
-
-
-
-
-
-
-
-
-  $(".click-me").click(function(){
+});
+  $(".click-me").click(function(){   //initial clicker
     $(this).hide();
     $("h1").hide();
     $("#form").show();
