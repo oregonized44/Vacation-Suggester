@@ -5,11 +5,16 @@
 var checkOne = function(inputNumber){
   if( inputNumber.toUpperCase() === "HOT"){
     checkOne.score = 2;
+    $('#one').removeClass('has-error');
+    $('#one').addClass('has-success');
     console.log(checkOne.score);
   }else if(inputNumber.toUpperCase() === "COLD"){
     checkOne.score = 1;
+    $('#one').removeClass('has-error');
+    $('#one').addClass('has-success');
     console.log(checkOne.score);
   }else{
+    $('#one').addClass('has-error');
     alert("Whoops, it looks like we are missing something! Check question 1");
   }
 }
@@ -21,9 +26,14 @@ var checkOne = function(inputNumber){
 var checkTwo = function(inputNumber){
   if( inputNumber.toUpperCase() === "HIGH"){
     checkTwo.score = 2;
+    $('#two').removeClass('has-error');
+    $('#two').addClass('has-success');
   }else if(inputNumber.toUpperCase() === "LOW"){
     checkTwo.score = 1;
+    $('#two').removeClass('has-error');
+    $('#two').addClass('has-success');
   }else{
+    $('#two').addClass('has-error');
     alert("Whoops, it looks like we are missing something! Check question2");
   }
 }
@@ -35,9 +45,14 @@ var checkTwo = function(inputNumber){
 var checkThree = function(inputNumber){
   if( inputNumber.toUpperCase() === "MORNING"){
     checkThree.score = 2;
+    $('#three').removeClass('has-error');
+    $('#three').addClass('has-success');
   }else if(inputNumber.toUpperCase() === "NIGHT"){
     checkThree.score = 1;
+    $('#three').removeClass('has-error');
+    $('#three').addClass('has-success');
   }else{
+    $('#three').addClass('has-error');
     alert("Whoops, it looks like we are missing something! Check question 3");
   }
 }
@@ -49,9 +64,14 @@ var checkThree = function(inputNumber){
 var checkFour = function(inputNumber){
   if( inputNumber.toUpperCase() === "DRY"){
     checkFour.score = 2;
+    $('#four').removeClass('has-error');
+    $('#four').addClass('has-success');
   }else if(inputNumber.toUpperCase() === "WET"){
     checkFour.score = 1;
+    $('#four').removeClass('has-error');
+    $('#four').addClass('has-success');
   }else{
+    $('#four').addClass('has-error');
     alert("Whoops, it looks like we are missing something! Check question 4");
   }
 }
@@ -63,9 +83,14 @@ var checkFour = function(inputNumber){
 var checkFive = function(inputNumber){
   if( inputNumber.toUpperCase() === "SHORTS"){
     checkFive.score = 2;
+    $('#five').removeClass('has-error');
+    $('#five').addClass('has-success');
   }else if(inputNumber.toUpperCase() === "PANTS"){
     checkFive.score = 1;
+    $('#five').removeClass('has-error');
+    $('#five').addClass('has-success');
   }else{
+    $('#five').addClass('has-error');
     alert("Whoops, it looks like we are missing something! Check question 5");
   }
 }
@@ -76,9 +101,14 @@ var checkFive = function(inputNumber){
 var checkSix = function(inputNumber){
   if( inputNumber.toUpperCase() === "SUMMER" || inputNumber.toUpperCase() === "SPRING"){
     checkSix.score = 2;
+    $('#five').removeClass('has-error');
+    $('#five').addClass('has-success');
   }else if(inputNumber.toUpperCase() === "FALL" || inputNumber.toUpperCase() === "WINTER"){
     checkSix.score = 1;
+    $('#five').removeClass('has-error');
+    $('#five').addClass('has-success');
   }else{
+    $('#five').addClass('has-error');
     alert("Whoops, it looks like we are missing something! Check question 6");
   }
 }
